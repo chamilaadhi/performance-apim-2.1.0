@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>performance-apim</artifactId>
+    <groupId>org.wso2.performance.apim</groupId>
+    <version>0.1.1-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jwt-generator</artifactId>
+  <name>JWT Token Generator for Microgateway</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <main.class>org.wso2.performance.apim.microgw.jwt.JWTGenerator</main.class>
+  </properties>
+</project>
